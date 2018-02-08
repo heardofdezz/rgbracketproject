@@ -1,0 +1,7 @@
+{
+  "name": "bracket",
+  "private": true,
+  "dependencies": {
+    "gojs": "^1.8.12"
+  }
+}
