@@ -9,22 +9,21 @@ end
 
 
   gem 'pg', '0.20.0'
-
-
+  gem 'bootstrap-sass', '~> 3.3.7'
+  gem 'rails-controller-testing'
+  gem 'will_paginate',           '3.1.6'
+  gem 'bootstrap-will_paginate', '1.0.0'
+  gem 'faker',          '1.7.3'
+  gem 'fast_jsonapi'
 group :development, :test do
 
-  gem 'byebug',  '9.0.6', platform: :mri
+  gem 'byebug', '9.0.6', platform: :mri
 end
-
-
-
-
-
-
-
-
-
-
+gem 'sprockets-rails'
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.0.0'
+gem 'flexbox-sass'
+gem 'popper_js', '~> 1.12.9'
 
 #############################################################################################
 
@@ -52,7 +51,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

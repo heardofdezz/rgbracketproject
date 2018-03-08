@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  # root 'bracket_testing#index'
-  get 'bracketrg', to: 'bracket_testing#rg'
 
+  resources :rg
+  resources :users
+  resources :sessions
+
+  root 'rg#homepage'
+
+  get 'bracketrg', to: 'rg#rg'
+  get 'signup', to: 'users#new'
+  post 'signup',  to: 'users#create'
+  get 'login',   to: 'sessions#new'
+  post 'login',   to: 'sessions#create'
+  delete 'logout',  to: 'sessions#destroy'
+  #get 'user', to: 'users#index'
 end

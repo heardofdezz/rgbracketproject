@@ -1,0 +1,25 @@
+#navbar-custom {
+  padding: 0.3rem 10rem;
+}
+
+.logo-title {
+  color: red;
+  font-family: 'Racing Sans One', cursive;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  margin: 0 3rem;
+  font-size: 30px;
+}
+
+.logo-title-signup {
+  color: red;
+  font-family: 'Racing Sans One', cursive;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-align: center;
+  font-size: 30px;
+  margin: 25px auto;
+}
+
+.logo-title:hover, .logo-title-signup:hover {
+    color: red;
+    text-decoration: none;
+}
