@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+-------------------------------------------------------------------
+
+Migration
+class CreateTickets < ActiveRecord::Migration[5.1]
+  def change
+    create_table :tickets do |t|
+      t.json 'payload'
+      t.timestamps
+    end
+  end
+end
+---------------------------------------------------------------------
+Model
+class Ticket < ApplicationRecord
+  serialize :tickets, JSON
+end
+----------------------------------------------------------------------

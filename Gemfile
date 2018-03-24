@@ -8,15 +8,17 @@ end
 ################  START DEV GEMS ADDED BY ME ##############################################
 
 
+  gem 'filestack-rails'
+  gem 'pusher'
   gem 'pg', '0.20.0'
   gem 'bootstrap-sass', '~> 3.3.7'
   gem 'rails-controller-testing'
   gem 'will_paginate',           '3.1.6'
   gem 'bootstrap-will_paginate', '1.0.0'
-  gem 'faker',          '1.7.3'
+
   gem 'fast_jsonapi'
 group :development, :test do
-
+  gem 'faker',          '1.7.3'
   gem 'byebug', '9.0.6', platform: :mri
 end
 gem 'sprockets-rails'

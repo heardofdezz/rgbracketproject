@@ -1,2 +1,0 @@
-class BracketTestingController < ApplicationController
-end
